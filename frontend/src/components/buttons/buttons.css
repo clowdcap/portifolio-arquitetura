@@ -2,7 +2,7 @@ button.buttonb,
 button.buttona {
     width: max-content;
     height: 70px;
-    font-size: 16px;
+    font-size: var(--font_grande);
     display: flex;
     font-weight: 400;
     flex-direction: row;
@@ -15,17 +15,29 @@ button.buttona {
     border-radius: 5px;
     letter-spacing: .2rem;
     padding: 2rem 3rem;
-    line-height: 12px;
+    line-height: 20px;
     text-transform: uppercase;
 }
 
 
 button.buttona {
-    background: #333333;
-    color: white;
+    background: var(--bg_tertiary);
+    color: var(--texto_botao);
 }
 
 button.buttonb {
-    color: black;
-    background: white;
+    color:  var(--texto_geral);
+    background: var(--bg_primary);
+}
+
+@media screen and (max-width: 395px) {
+    button.buttonb,
+    button.buttona {
+        font-size: var(--font_entrelinhas);
+    }
+
+    button.buttonb svg,
+    button.buttona svg {
+        display: none;
+    }
 }

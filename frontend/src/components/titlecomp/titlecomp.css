@@ -1,5 +1,22 @@
 h2.title__components {
-    font-size: 64px;
+    font-size: var(--font__titulo);
     font-weight: normal;
-    color: #BDBDBD;
+    color: var(--texto_titulo);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .title__components {
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 765px) {
+    .title__components {
+        margin: 5rem auto;
+        font-size: var(--font__titulo);
+        
+    }
 }

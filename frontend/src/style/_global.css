@@ -1,3 +1,78 @@
+/* ROOT LIGHT MODE 
+
+:root {
+    --texto_geral: #333;
+    --texto_destaque: #000;
+    --texto_cinza: #f2f2f2;
+    --texto_titulo: #BDBDBD;
+    --texto_subtitulo: #333;
+    --texto_botao: #FFF;
+    --texto_footer: #FFF;
+    --texto_rodape: #c8c8c870;
+    --bg_primary: #fff;
+    --bg_secondary: #FBFBFB;
+    --bg_tertiary: #333333;
+    --bg_footer: #2C2C2C;
+    --font__titulo: 64px;
+    --font__subtitulo: 60px;
+    --font__titulo__mob: 48px;
+    --font__missao: 24px;
+    --font_destaque: 20px;
+    --font_header: 18px;
+    --font_grande: 16px;
+    --font_geral: 14px;
+    --font_entrelinhas: 12px;
+    --fonte_baixa: 10px;
+} 
+
+*/
+
+/* ROOT DARK MODE */
+
+:root {
+    --texto_geral: #f2f2f2;
+    --texto_destaque: #fff;
+    --texto_cinza: #ccc;
+    --texto_titulo: #d1d1d1;
+    --texto_subtitulo: #dadada;
+    --texto_botao: #000;
+    --texto_footer: #000;
+    --texto_rodape: #dadada;
+    --bg_primary: #333;
+    --bg_secondary: #555;
+    --bg_tertiary: #f2f2f2;
+    --bg_footer: #dadada;
+    --font__titulo: 64px;
+    --font__subtitulo: 60px;
+    --font__titulo__mob: 48px;
+    --font__missao: 24px;
+    --font_destaque: 20px;
+    --font_header: 18px;
+    --font_grande: 16px;
+    --font_geral: 14px;
+    --font_entrelinhas: 12px;
+    --fonte_baixa: 10px;
+}
+
+@media screen and (max-width:640px) {
+    :root {
+        --font__missao: 20px;
+        --font__titulo: 48px;
+        --font_grande: 14px;
+        --font_geral: 12px;
+        --font_entrelinhas: 11px;
+    }
+}
+@media screen and (max-width:340px) {
+    :root {
+        --font__missao: 20px;
+        --font__titulo: 38px;
+        --font_grande: 12px;
+        --font_geral: 11px;
+        --font_entrelinhas: 10px;
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -34,9 +109,10 @@ section {
 
 .active {
     display: flex !important;
+    justify-content: center;
 }
-
 
 body {
     width: 100%;
+    background-color: var(--bg_primary);
 }

@@ -70,6 +70,7 @@ section.project {
     }
     .btn__image__project {
         justify-content: center !important;
-        margin-top: 5rem;
+        margin: 5rem 1rem;
     }
+    
 }

@@ -4,14 +4,6 @@ section.contact {
     padding-bottom: 6rem ;
 }
 
-.title__contact {
-    color: #BDBDBD;
-    font-size: 64px;
-    line-height: 64px;
-    font-weight: 400;
-    margin-bottom: 2rem;
-}
-
 .container__contact {
     display: flex;
     flex-direction: row;
@@ -32,9 +24,9 @@ section.contact {
 .form__contact textarea {
     width: 100%;
     height: 45px;
-    background-color: #F3F3F3;
+    background-color: var(--bg_secondary);
     border: none;
-    outline: none;
+    outline: 1px solid var(--texto_cinza);
     padding: 1rem 2rem;
     font-size: 16px;
     border-radius: 5px;
@@ -81,19 +73,20 @@ section.contact {
         align-items: center;
     }
     .image__contact {
-        width: 75%;
+        width: 100%;
         margin: 0 auto;
+        margin-bottom: 2rem;
     }
 
     .form__contact {
-        width: 75%;
+        width: 85%;
         margin: 0 auto;
         font-size: 14px;
+        align-items: center;
     }
 
     .btn__form__contact {
         margin: 5rem 0 0 0;
         justify-content: center !important;
     }
-
 }

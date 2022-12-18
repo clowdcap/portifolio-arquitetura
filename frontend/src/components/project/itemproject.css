@@ -19,21 +19,8 @@ section.itemproject {
     gap: 5rem;
 }
 
-.container__itemproject .title__itemproject h2 {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 64px;
-}
-
-.container__itemproject .title__itemproject span {
-    color: #BDBDBD;
-    font-size: 64px !important;
-    font-weight: 300 !important;
-    line-height: 64px !important;
-}
-
 hr {
-    border: 1px solid #f2f2f2 !important;
+    border: 1px solid var(--texto_cinza) !important;
     margin-bottom: 3rem;
 }
 
@@ -45,7 +32,7 @@ hr {
 }
 
 .item__itemproject {
-    background-color: #FBFBFB;
+    background-color: var(--bg_secondary);
     display: flex;
     flex-direction: row;
 }
@@ -68,13 +55,22 @@ hr {
     font-size: 40px;
     line-height: 40px;
     font-weight: 300;
-    color: #BDBDBD;
+    color: var(--texto_titulo);
 }
 
 .text__item__itemproject p {
-    font-size: 16px;
+    font-size: var(--font_grande);
     font-weight: 300;
-    line-height: 20px;
+    line-height: 24px;
+    color: var(--texto_geral);
+}
+
+
+.btn__arrows__itemproject {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
 }
 
 
@@ -91,21 +87,47 @@ hr {
 
     .list__itemproject 
     .item__itemproject {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
-    .table__numbers {
+
+    .item__itemproject {
+        padding: 2rem 1rem;
+        align-items: center;
+    }
+    
+    .item__itemproject img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .text__item__itemproject p  {
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    .btn__arrows__itemproject {
         justify-content: center;
         align-items: center;
-        margin-bottom: 2rem;
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 973px) {
+@media screen and (max-width: 975px) {
     .container__itemproject {
         justify-content: center;
         align-items: center;
         gap: 1rem;
+    }
+
+    .item__itemproject {
+        padding: 0;
+    }
+
+
+    .item__itemproject img {
+        width: 100%;
+        height: 100%;
     }
 
     .title__itemproject {
@@ -127,9 +149,21 @@ hr {
         gap: 1rem;
     }
 
+    .text__item__itemproject h2  {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
     .btn__image__itemproject {
-        margin-top: 2rem;
-        justify-content: center !important;
-        align-items: center !important;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .text__item__itemproject p {
+        text-align: center;
+        margin: 0;
     }
 }

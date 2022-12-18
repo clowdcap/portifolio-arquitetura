@@ -7,22 +7,9 @@ section.certfication {
     margin-bottom: 3rem;
 }
 
-.title__certification h2 {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 64px;
-}
-
-.title__certification span {
-    color: #BDBDBD;
-    text-transform: uppercase;
-    font-size: 64px !important;
-    font-weight: 300 !important;
-    line-height: 64px !important;
-}
 
 .container__itemproject hr {
-    border: 1px solid #f2f2f2 !important;
+    border: 1px solid var(--texto_cinza) !important;
     margin-bottom: 3rem;
 }
 

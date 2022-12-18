@@ -7,7 +7,7 @@ const Mission = () => {
   return (
     <section className="mission center">
         <TitleComp text="Foco Principal" />
-        <div className="container__mission">
+        <div className="container__mission center">
             <div className="box__mission">
                 <h1 className="number__box">1</h1>
                 <p className="text_box">

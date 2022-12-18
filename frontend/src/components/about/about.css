@@ -1,6 +1,6 @@
 section.about {
-    background: #FBFBFB;
-    border-bottom: 30px solid white;
+    background: var(--bg_secondary);
+    border-bottom: 30px solid var(--bg_primary);
     padding: 2rem 5rem;
 }
 
@@ -40,37 +40,24 @@ section.about {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 
 .text__about h2 {
-    font-size: 64px;
+    font-size: var(--font__titulo);
     font-weight: normal;
-    color: #BDBDBD;
+    color: var(--texto_titulo);
 }
 
 
 .text__about p {
     line-height: 25px; 
-    font-size: 16px;
+    font-size: var(--texto_grande);
+    color: var(--texto_geral);
 }
 
 
-.text__about button {
-    width: 220px;
-    height: 70px;
-    color: black;
-    font-size: 16px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    border: none;
-    outline: none;
-    background: white;
-    cursor: pointer;
-}
 
 
 @media screen and (max-width: 924px){
@@ -91,7 +78,7 @@ section.about {
     }
     
     .images__about img {
-        width: 500px;
+        width: 400px;
         object-fit: cover;
         margin-top: 3rem;
     }
@@ -103,7 +90,8 @@ section.about {
     .text__about {
         justify-content: center;
         align-items: center;
-        gap: 5rem;
+        gap: 2rem;
+        text-align: center;
     }
         
     .text__about h2 {
@@ -111,10 +99,11 @@ section.about {
     }
         
     .text__about p {
-        width: 75%;
-        font-size: 20px !important;
+        width: 85%;
+        font-size: var(--font_destaque) !important;
         line-height: 30px !important;
         font-weight: 300;
+        
     }
         
 }

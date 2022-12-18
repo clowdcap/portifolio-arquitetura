@@ -54,7 +54,9 @@ const Contact = () => {
   
   return (
     <section className="contact center" id='contato'>
-      <TitleComp text="Contato" />
+      <div className="title__contact">
+        <TitleComp text="Contato" />
+      </div>
       <br /><br />
       <div className="container__contact">
         <form onSubmit={create_contact} className="form__contact">

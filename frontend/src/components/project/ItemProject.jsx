@@ -63,8 +63,10 @@ const ItemProject = () => {
                             </div>
                         </li>
                     ))}
-                    <PageArrow />
-                    <PageNumb num_page='1' num_pages='1'/>
+                    <div className="btn__arrows__itemproject">
+                        <PageArrow />
+                        <PageNumb num_page='1' num_pages='1'/>
+                    </div>
                 </ul>
             </div>
         </section>

@@ -12,9 +12,9 @@ section.notfound {
 }
 
 .container__notfound h1 {
-    font-size: 26px;
+    font-size: var(--font__missao);
 }
 
 .nav__link__notfound {
-    font-size: 20px;
+    font-size: var(--font_destaque);
 }

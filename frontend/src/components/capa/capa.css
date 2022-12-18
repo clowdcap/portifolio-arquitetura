@@ -12,27 +12,10 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 5rem;
+    color: var(--texto_geral);
 }
 
-.textos__capa  h2 {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 64px;
-}
 
-.textos__capa  span {
-    color: #BDBDBD;
-    text-transform: uppercase;
-    font-size: 64px !important;
-    font-weight: 300 !important;
-    line-height: 64px !important;
-}
-
-.switch {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-}
 
 .image__capa { 
     flex: 2;
@@ -62,8 +45,9 @@
     align-items: center;
     gap: .5rem;
     cursor: pointer;
-    background: white;
+    background: var(--bg_primary);
     padding: 2rem;
+    color: var(--texto_geral);
 }
 
 @media screen and (max-width: 768px){
@@ -75,6 +59,10 @@
     .textos__capa {
         justify-content: center;
         align-items: center;
+    }
+
+    .image__view {
+        padding: 1rem 2rem;
     }
     
 }

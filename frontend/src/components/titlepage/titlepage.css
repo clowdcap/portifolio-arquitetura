@@ -1,22 +1,26 @@
 .title__page h2 {
     font-weight: 700;
-    font-size: 64px;
+    font-size: var(--font__titulo);
     line-height: 64px;
 }
     
 .title__page h2 span {
-    color: #BDBDBD;
+    color: var(--texto_titulo);
     text-transform: uppercase;
-    font-size: 64px !important;
     font-weight: 300 !important;
-    line-height: 64px !important;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 1024px) {
     .title__page {
         justify-content: center !important;
         align-items: center !important;
         text-align: center;
-        margin: 5rem;
+    }
+}
+@media screen and (max-width: 765px) {
+    .title__page {
+        margin: 5rem auto;
+        font-size: var(--font__titulo);
+        
     }
 }
