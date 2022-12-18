@@ -1,0 +1,80 @@
+.container__capa {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.textos__capa {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.textos__capa  h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+.textos__capa  span {
+    color: #BDBDBD;
+    text-transform: uppercase;
+    font-size: 64px !important;
+    font-weight: 300 !important;
+    line-height: 64px !important;
+}
+
+.switch {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.image__capa { 
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.image__capa img {
+    border-radius: 5px;
+}
+
+.image__bg {
+    width: 100%;
+    height: 100%;
+    max-height: 830px;
+    background-size: cover;
+}
+
+.image__view {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    background: white;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 768px){
+    .container__capa {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .textos__capa {
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

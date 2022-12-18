@@ -1,0 +1,31 @@
+
+.table__numbers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.item__table__numbers {
+    font-weight: 400;
+    font-size: 24px;
+    color: #BDBDBD;
+}
+
+.item__table__numbers:first-of-type {
+    align-items: center;
+    justify-content: center;
+    white-space: pre;
+}
+
+@media screen and (max-width: 768px){
+
+    .arrows__capa,
+    .table__numbers {
+        justify-content: center !important;
+    }
+
+    .table__numbers {
+        margin-bottom: 2rem;
+    }
+}

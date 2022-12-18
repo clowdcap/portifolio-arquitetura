@@ -1,0 +1,23 @@
+
+
+.box__arrows {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+}
+
+.btn__arrow {
+    padding: 1.5rem;
+    border: 1px solid #F2F2F2;
+    background-color: #F9F9F9;
+    cursor: pointer;
+}
+
+.btn__arrow svg.item__arrow {
+    width: 15px;
+    height: 15px;
+}
+
+.btn__arrow:first-child {
+    background-color: white;
+}

@@ -1,0 +1,135 @@
+/* Item Projects  */
+section.itemproject {
+    width: 100%;
+    margin: 1rem 0 5rem 0; 
+}
+
+.itemproject .container__itemproject {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__itemproject .title__itemproject {
+    margin-bottom: 3rem;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.container__itemproject .title__itemproject h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+}
+
+.container__itemproject .title__itemproject span {
+    color: #BDBDBD;
+    font-size: 64px !important;
+    font-weight: 300 !important;
+    line-height: 64px !important;
+}
+
+hr {
+    border: 1px solid #f2f2f2 !important;
+    margin-bottom: 3rem;
+}
+
+.list__itemproject {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.item__itemproject {
+    background-color: #FBFBFB;
+    display: flex;
+    flex-direction: row;
+}
+
+.item__itemproject img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.text__item__itemproject {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 2rem;
+}
+
+.text__item__itemproject h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    color: #BDBDBD;
+}
+
+.text__item__itemproject p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container__itemproject {
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .title__itemproject {
+        margin-top: 3rem;
+    }
+
+    .list__itemproject 
+    .item__itemproject {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .table__numbers {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 973px) {
+    .container__itemproject {
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .title__itemproject {
+        margin-top: 3rem;
+    }
+
+    .list__itemproject {
+        width: 80%;
+    }
+
+    .item__itemproject {
+        margin: 0 auto;
+        flex-direction: column !important;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .text__item__itemproject {
+        gap: 1rem;
+    }
+
+    .btn__image__itemproject {
+        margin-top: 2rem;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}

@@ -1,0 +1,31 @@
+button.buttonb,
+button.buttona {
+    width: max-content;
+    height: 70px;
+    font-size: 16px;
+    display: flex;
+    font-weight: 400;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: .2rem;
+    padding: 2rem 3rem;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+
+button.buttona {
+    background: #333333;
+    color: white;
+}
+
+button.buttonb {
+    color: black;
+    background: white;
+}
