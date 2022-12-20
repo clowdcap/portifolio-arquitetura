@@ -1,6 +1,8 @@
-/* ROOT LIGHT MODE 
+/* ROOT LIGHT MODE */
 
 :root {
+
+    /* Text Color */
     --texto_geral: #333;
     --texto_destaque: #000;
     --texto_cinza: #f2f2f2;
@@ -9,10 +11,14 @@
     --texto_botao: #FFF;
     --texto_footer: #FFF;
     --texto_rodape: #c8c8c870;
+
+    /* Bg Color */
     --bg_primary: #fff;
     --bg_secondary: #FBFBFB;
     --bg_tertiary: #333333;
     --bg_footer: #2C2C2C;
+
+    /* Font Size */
     --font__titulo: 64px;
     --font__subtitulo: 60px;
     --font__titulo__mob: 48px;
@@ -25,9 +31,9 @@
     --fonte_baixa: 10px;
 } 
 
-*/
 
-/* ROOT DARK MODE */
+
+/* ROOT DARK MODE 
 
 :root {
     --texto_geral: #f2f2f2;
@@ -53,6 +59,8 @@
     --font_entrelinhas: 12px;
     --fonte_baixa: 10px;
 }
+
+*/
 
 @media screen and (max-width:640px) {
     :root {
