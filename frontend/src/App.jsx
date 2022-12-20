@@ -8,7 +8,7 @@ import Projects from './pages/projects/Projects'
 import Certifications from './pages/certifications/Certifications'
 import Contacts from './pages/contacts/Contacts'
 import NotFound from './pages/notfound/NotFound'
-import Sample from './pages/sample/Sample'
+import SamplePage from './components/samplepage/SamplePage'
 
 import { Route, Routes } from 'react-router-dom'
 import Header from './components/header/Header'
@@ -25,7 +25,7 @@ const App = () => {
           <Route path="projetos" element={<Projects />} />
           <Route path="certificados" element={<Certifications />} />
           <Route path="contato" element={<Contacts />} />
-          <Route path="projetos/:id" element={<Sample />} />
+          <Route path="projetos/:id" element={<SamplePage />} />
           <Route path="*" element={<NotFound />} />
 
         </Routes>

@@ -40,7 +40,7 @@ export async function contactUsHome(fastify: FastifyInstance) {
                 }
             })
 
-            return reply.status(201).send({ status: 'Registrado' })
+            return reply.status(201).send({ status: 'Contato Registrado' })
         })
 
     // FIM ROTA CONTATO US

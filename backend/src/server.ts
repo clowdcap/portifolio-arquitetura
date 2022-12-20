@@ -2,6 +2,7 @@ import Fastify from "fastify"
 import cors from "@fastify/cors"
 
 import { contactUsHome } from "./routes/contactUsHome"
+import { posts } from "./routes/posts"
 
 async function bootstrap() {
 
@@ -14,6 +15,7 @@ async function bootstrap() {
     })
     
     fastify.register(contactUsHome)
+    fastify.register(posts)
 
     await fastify.listen({ port: 5000 })
 }

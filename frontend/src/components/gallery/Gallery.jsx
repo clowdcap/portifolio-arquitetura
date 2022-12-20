@@ -74,7 +74,7 @@ const Gallery = () => {
             <div className="images__gallery">
                 
                 {data_gallery.map(data => (
-                    <img src={data.imgurl} alt="This is a projects totality" />
+                    <img key={data.id} src={data.imgurl} alt="This is a projects totality" />
                 ))}
 
             </div>

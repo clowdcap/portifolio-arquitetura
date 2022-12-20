@@ -1,6 +1,9 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -26,11 +29,11 @@ model ContatoUs {
 
 model Post {
   id          String   @id @default(cuid())
-  title       String   @unique
+  title       String
   subtitle    String
   description String
   content     String
-  createdAt   DateTime @default(now())
   createdUser String
   imgCapa     String
+  createdAt   DateTime @default(now())
 }

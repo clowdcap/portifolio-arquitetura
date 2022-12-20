@@ -35,6 +35,8 @@ hr {
     background-color: var(--bg_secondary);
     display: flex;
     flex-direction: row;
+
+    max-width: 600px;
 }
 
 .item__itemproject img {

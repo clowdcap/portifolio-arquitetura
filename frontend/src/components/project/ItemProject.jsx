@@ -1,44 +1,17 @@
 import React from 'react'
 
+import  { Link } from 'react-router-dom'
+
+import TitlePage from '../titlepage/TitlePage'
 import PageArrow from './../pageArrow/PageArrow'
 import PageNumb from './../pageNumb/PageNumb'
-import TitlePage from '../titlepage/TitlePage'
 import ButtonA from '../buttons/ButtonA'
 
-
-import imageProj1 from './../../assets/projects-1.png'
-import imageProj2 from './../../assets/projects-2.png'
-import imageProj3 from './../../assets/projects-3.png'
-
-import { NavLink } from "react-router-dom"
+// import SamplePage from '../samplepage/SamplePage'
 
 import './itemproject.css'
 
-const ItemProject = () => {
-
-    const data_project = [
-        {   
-            id: 1,
-            title: 'Project 1',
-            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit fugiat reiciendis voluptates blanditiis inventore. Perferendis adipisci eum qui error omnis minima. Minima ad earum beatae aperiam enim eligendi autem ducimus?, Minima ad earum beatae aperiam enim eligendi autem ducimus?, Minima ad earum beatae aperiam enim eligendi autem ducimus?, ",
-            imgurl: imageProj1,
-            urlimg: '1'
-        },
-        {
-            id: 2,
-            title: 'Project 2',
-            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit fugiat reiciendis voluptates blanditiis inventore. Perferendis adipisci eum qui error omnis minima. Minima ad earum beatae aperiam enim eligendi autem ducimus?, Minima ad earum beatae aperiam enim eligendi autem ducimus?, Minima ad earum beatae aperiam enim eligendi autem ducimus?, ",
-            imgurl: imageProj2,
-            urlimg: '2'
-        },
-        {
-            id: 3,
-            title: 'Project 3',
-            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit fugiat reiciendis voluptates blanditiis inventore. Perferendis adipisci eum qui error omnis minima. Minima ad earum beatae aperiam enim eligendi autem ducimus?, Minima ad earum beatae aperiam enim eligendi autem ducimus?, Minima ad earum beatae aperiam enim eligendi autem ducimus?, ",
-            imgurl: imageProj3,
-            urlimg: '3'
-        },
-    ]
+const ItemProject = ({posts}) => {
 
     return (
         <section className='itemproject'>
@@ -47,26 +20,32 @@ const ItemProject = () => {
                 <div className="title__itemproject">
                     <TitlePage up="Meus" down="Projetos" />
                 </div>
-                <hr />
+                <hr />  
 
+                
                 <ul className='list__itemproject'>
-                    {data_project.map(data => (
+
+                    {posts.map((data) => (
+
                         <li key={data.id} className='item__itemproject'>
-                            <img src={data.imgurl} alt="Item destinity for Project" />
+                            <img src={data.imgCapa} alt="Item destinity for Project" />
                             <div className="text__item__itemproject">
                                 <h2>{data.title}</h2>
                                 <p>{data.description}</p>
                                 <div className="btn__image__itemproject">
-                                    <NavLink to={data.urlimg} >
-                                    <ButtonA text="Ver mais"/></NavLink>
+                                    <Link to={data.id} state={data} >
+                                        <ButtonA text="Ver mais"/>
+                                    </Link>
                                 </div>  
                             </div>
                         </li>
+                
                     ))}
+
                     <div className="btn__arrows__itemproject">
                         <PageArrow />
                         <PageNumb num_page='1' num_pages='1'/>
-                    </div>
+                    </div> 
                 </ul>
             </div>
         </section>

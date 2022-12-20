@@ -1,7 +1,7 @@
 import React from 'react'
 
 import ButtonA from '../buttons/ButtonA'
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 import TitleComp from '../titlecomp/TitleComp'
 
@@ -39,7 +39,7 @@ const Project = () => {
         </div>
 
         <div className="btn__image__project">
-          <NavLink to="/projects" ><ButtonA text="Todos os Projetos"/></NavLink>
+          <Link to="/projetos" ><ButtonA text="Todos os Projetos"/></Link>
         </div>
 
       </div>
