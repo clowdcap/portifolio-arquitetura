@@ -23,3 +23,14 @@ model ContatoUs {
   message    String
   createdAt  DateTime @default(now())
 }
+
+model Post {
+  id          String   @id @default(cuid())
+  title       String   @unique
+  subtitle    String
+  description String
+  content     String
+  createdAt   DateTime @default(now())
+  createdUser String
+  imgCapa     String
+}
