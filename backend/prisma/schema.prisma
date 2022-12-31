@@ -26,11 +26,11 @@ model ContatoUs {
 
 model Post {
   id          String   @id @default(cuid())
-  title       String   @unique
-  subtitle    String
+  title       String
+  slug        String
   description String
   content     String
   createdAt   DateTime @default(now())
-  createdUser String
-  imgCapa     String
+  author      String
+  img_capa    String
 }
