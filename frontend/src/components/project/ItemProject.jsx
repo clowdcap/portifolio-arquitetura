@@ -10,7 +10,7 @@ import imageProj1 from './../../assets/projects-1.png'
 import imageProj2 from './../../assets/projects-2.png'
 import imageProj3 from './../../assets/projects-3.png'
 
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 import './itemproject.css'
 
@@ -19,17 +19,17 @@ const ItemProject = () => {
     const data_project = [
         {   
             id: 1,
-            title: 'Project 1',
-            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit fugiat reiciendis voluptates blanditiis inventore. Perferendis adipisci eum qui error omnis minima. Minima ad earum beatae aperiam enim eligendi autem ducimus?, Minima ad earum beatae aperiam enim eligendi autem ducimus?, Minima ad earum beatae aperiam enim eligendi autem ducimus?, ",
+            title: 'Jogo da Velha',
+            description: "Desenvolvido em React JS e com estilização em CSS",
             imgurl: imageProj1,
-            urlimg: '1'
+            url_link: '/projetos/tictactoe' 
         },
         {
             id: 2,
-            title: 'Project 2',
-            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit fugiat reiciendis voluptates blanditiis inventore. Perferendis adipisci eum qui error omnis minima. Minima ad earum beatae aperiam enim eligendi autem ducimus?, Minima ad earum beatae aperiam enim eligendi autem ducimus?, Minima ad earum beatae aperiam enim eligendi autem ducimus?, ",
+            title: 'Dots',
+            description: "Pontos na tela",
             imgurl: imageProj2,
-            urlimg: '2'
+            url_link: '/projetos/dots'
         },
         {
             id: 3,
@@ -50,18 +50,24 @@ const ItemProject = () => {
                 <hr />
 
                 <ul className='list__itemproject'>
+
+                    
+                    
                     {data_project.map(data => (
                         <li key={data.id} className='item__itemproject'>
-                            <img src={data.imgurl} alt="Item destinity for Project" />
+                            <div className="img__itemproject">
+                                <img src={data.imgurl} alt="Item destinity for Project" />
+                            </div>
                             <div className="text__item__itemproject">
                                 <h2>{data.title}</h2>
                                 <p>{data.description}</p>
                                 <div className="btn__image__itemproject">
-                                    <NavLink to={data.urlimg} >
-                                    <ButtonA text="Ver mais"/></NavLink>
+                                    <Link to={data.url_link} >
+                                    <ButtonA text="Ver mais"/></Link>
                                 </div>  
                             </div>
                         </li>
+                    
                     ))}
                     <div className="btn__arrows__itemproject">
                         <PageArrow />

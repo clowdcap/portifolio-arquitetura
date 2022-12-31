@@ -1,0 +1,57 @@
+
+.jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 70vh;
+}
+
+#game {
+    display: grid;
+
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 0.5rem;
+}
+
+#box {
+    background-color: var(--bg__tictactoe);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  100%;
+    height: 100%;
+    transition: all .1s ease;
+    font-size: 50px;
+    color: black;
+}
+
+#box:hover {
+    background-color: var(--bg__tictactoe_hover);
+}
+
+#box:active {
+    background-color: var(--texto_rodape);
+}
+
+.btn {
+    padding: 1rem 2rem;
+    color: var(--texto_geral);
+    font-size: 22px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 15px;
+    background-color: var(--bg__tictactoe);
+
+    transition: all 0.1s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--bg__tictactoe_hover);
+}
+
+.btn:active {
+    background-color: var(--texto_rodape);
+}

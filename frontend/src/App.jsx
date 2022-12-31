@@ -13,6 +13,8 @@ import Sample from './pages/sample/Sample'
 import { Route, Routes } from 'react-router-dom'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
+import TicTacToe from './pages/projects/tictactoe/TicTacToe'
+import Dots from './pages/projects/dots/Dots'
 
 const App = () => {
   return (
@@ -27,6 +29,18 @@ const App = () => {
           <Route path="contato" element={<Contacts />} />
           <Route path="projetos/:id" element={<Sample />} />
           <Route path="*" element={<NotFound />} />
+
+          
+          {/* 
+
+          Abaixo vai mudar as rotas pra mais dinamicas igual os projetos/:id
+
+          */}
+          
+          <Route path="projetos/tictactoe" element={<TicTacToe />} />
+          <Route path="projetos/dots" element={<Dots />} />
+
+
 
         </Routes>
       <Footer />
