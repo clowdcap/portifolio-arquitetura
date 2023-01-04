@@ -1,21 +1,30 @@
 import React from 'react'
 
+/* Import Components */
 import PageArrow from './../pageArrow/PageArrow'
 import PageNumb from './../pageNumb/PageNumb'
 import TitlePage from '../titlepage/TitlePage'
 import ButtonA from '../buttons/ButtonA'
 
-
+/* Import Images */
 import imageProj1 from './../../assets/projects-1.png'
 import imageProj2 from './../../assets/projects-2.png'
 import imageProj3 from './../../assets/projects-3.png'
 
+/* Import Config DDM */
 import { Link } from "react-router-dom"
 
+/* Import CSS */
 import './itemproject.css'
 
 const ItemProject = () => {
 
+    /* Banco de Dados dos Projetos */
+    /* 
+        Para proxima atualização:
+            - Criar Tabela no DB
+            - Chamar por requisicao API local desses daddos
+    */
     const data_project = [
         {   
             id: 1,
@@ -27,16 +36,16 @@ const ItemProject = () => {
         {
             id: 2,
             title: 'Dots',
-            description: "Pontos na tela",
+            description: "Pontos renderizados na tela feio em React JS",
             imgurl: imageProj2,
             url_link: '/projetos/dots'
-        },
+        },  
         {
             id: 3,
-            title: 'Project 3',
-            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit fugiat reiciendis voluptates blanditiis inventore. Perferendis adipisci eum qui error omnis minima. Minima ad earum beatae aperiam enim eligendi autem ducimus?, Minima ad earum beatae aperiam enim eligendi autem ducimus?, Minima ad earum beatae aperiam enim eligendi autem ducimus?, ",
+            title: 'Poke Api - Simple',
+            description: "Simples requisição de dados via api do Pokemon com React JS",
             imgurl: imageProj3,
-            urlimg: '3'
+            url_link: '/projetos/pokeapi-simple'
         },
     ]
 

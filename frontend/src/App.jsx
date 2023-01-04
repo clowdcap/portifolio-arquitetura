@@ -15,6 +15,7 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import TicTacToe from './pages/projects/tictactoe/TicTacToe'
 import Dots from './pages/projects/dots/Dots'
+import PokeApiSimple from './pages/projects/pokeapi-sample/PokeApiSimple'
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
           
           <Route path="projetos/tictactoe" element={<TicTacToe />} />
           <Route path="projetos/dots" element={<Dots />} />
+          <Route path="projetos/pokeapi-simple" element={<PokeApiSimple />} />
 
 
 
